@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "oZxuWecaE/Ao1Ocidj69AhJemzkWKU9bdTm7Iyvld7OQESCOfShwFezJDyGInsI3qNwtxUVUzwYSMsl6H3GNoQ==",
+  "dgSpecHash": "hhPVf6+Yl47T6vAhcq3YN9gCaPEIJX7MHiR1BrUcVO+rj1EmUjFoYV+l3gAp2uR3CSA2bdSer+QTqj2LlseWXw==",
   "success": true,
   "projectFilePath": "D:\\cursos\\xamarin\\tiktok\\TikTokBasicClone\\TikTokBasicClone\\TikTokBasicClone\\TikTokBasicClone.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\octane.xam.videoplayer\\3.1.0\\octane.xam.videoplayer.3.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"

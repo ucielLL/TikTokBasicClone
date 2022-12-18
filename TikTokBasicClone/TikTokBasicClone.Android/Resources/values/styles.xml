@@ -14,5 +14,10 @@
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
+	  <!-- <item name="android:statusBarColor">#00000</item>
+	  <item name="android:windowTranslucentStatus">false</item>
+	  <item name="android::windowTranslucentNavigation">true</item>-->
+	  <item name="android:windowLightStatusBar">false</item>
+	  <item name="android:windowBackground">@drawable/layoutsplashxml</item>
   </style>
 </resources>

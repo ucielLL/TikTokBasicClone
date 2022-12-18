@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TikTokBasicClone.View.Player.VideosView"
+             xmlns:video="clr-namespace:Octane.Xamarin.Forms.VideoPlayer;assembly=Octane.Xamarin.Forms.VideoPlayer"
+             xmlns:playerView="clr-namespace:TikTokBasicClone.View.Player">
+    <CarouselView ItemsSource="{Binding ListVideos}"
+                  x:Name="video">
+        <CarouselView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical"
+                               SnapPointsAlignment="Center"
+                               SnapPointsType="MandatorySingle"/>
+        </CarouselView.ItemsLayout>
+        <CarouselView.ItemTemplate>
+      
+        <DataTemplate>
+                <Grid>
+                    <video:VideoPlayer Source="{Binding Video}" AutoPlay="True" Repeat="True" DisplayControls="False" />
+                    <StackLayout Orientation="Horizontal">
+                        <playerView:PanelLeft HorizontalOptions="Start" />
+                        <StackLayout HorizontalOptions="EndAndExpand"
+                                 VerticalOptions="End"
+                                WidthRequest="50"
+                                 Margin="5"
+                                >
+                            <Frame WidthRequest="50"
+                               HeightRequest="50"
+                               Padding="0"
+                               CornerRadius="40" >
+                                <Image Source="https://i.ibb.co/mG8Djgq/OCZwa-WQ9-QXBp.jpg" 
+                                   Aspect="AspectFill"/>
+
+                            </Frame>
+                            <Image Source="heart.png"   WidthRequest="50"/>
+                            <Label Text="1.2M" TextColor="White" HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               FontSize="Medium"/>
+                            <Image Source="charlar.png"   WidthRequest="50"/>
+                            <Label Text="1.2k" TextColor="White" HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               FontSize="Medium"/>
+                            <Image Source="share.png"  WidthRequest="50" />
+                            <Label Text="200" TextColor="White" HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               FontSize="Medium"/>
+                            <playerView:Disc />
+
+
+
+
+
+                        </StackLayout>
+                        
+                    </StackLayout>
+                    
+                  
+                </Grid>
+               
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+        
+    </CarouselView>
+  
+</ContentView>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TikTokBasicClone.View.Player.PanelLeft">
+    <StackLayout VerticalOptions="End"
+                 HorizontalOptions="Start"
+                 Spacing="2"
+                 Margin="5,0,0,5">
+        <Grid Padding="3">
+            <BoxView BackgroundColor="Black" CornerRadius="5"
+                     Opacity=".7"/>
+            <StackLayout Orientation="Horizontal" >
+                <Frame Padding="0" WidthRequest="25"
+                       HeightRequest="25"
+                       VerticalOptions="Center"
+                       Margin="10,5" 
+                       BackgroundColor="Transparent">
+
+                    <Image Source="https://i.ibb.co/tP5nh3h/d2d75f8ff7f42dff7c7a8f07f8c75bc9.png"
+                       Aspect="AspectFill"/>
+                </Frame>
+                <Label Text="Take Breath "
+                       TextColor="White" VerticalOptions="Center"/>
+            </StackLayout>
+
+
+        </Grid>
+
+        <Label Text="@UserNane"
+               TextColor="White"
+               FontAttributes="Bold"
+               FontSize="Medium"/>
+        <Label Text="Descripción del viedo  #focus #viral ..."
+               TextColor="White"
+                FontAttributes="None"
+               FontSize="Small"/>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="https://i.ibb.co/84cMxcQ/musica.png" WidthRequest="15"/>
+            <Label Text="Original song..."
+               TextColor="White"
+               FontAttributes="None"
+               FontSize="Small"/>
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentView>

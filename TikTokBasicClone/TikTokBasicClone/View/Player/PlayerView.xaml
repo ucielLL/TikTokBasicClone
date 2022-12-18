@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TikTokBasicClone.View.Player.PlayerView"
+             xmlns:componentview ="clr-namespace:TikTokBasicClone.View.Player">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label"
+                   x:Key="lbFooter">
+                
+                <Setter Property="FontSize" Value="10"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style TargetType="Image" x:Key="imagefooter">
+                <Setter Property="HeightRequest" Value="30"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid BackgroundColor="Black"
+          RowDefinitions="*,70">
+        <componentview:VideosView/>
+        <!--#region header -->
+        <StackLayout Orientation="Horizontal"
+                     HeightRequest="35"
+                     VerticalOptions="Start"
+                     Margin="20">
+            <Image Source="live.png"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand">
+                <Label Text="Siguiendo"
+                       TextColor="#9a9a9a"
+                       VerticalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="23"/>
+                <BoxView HeightRequest="12"
+                         WidthRequest="12"
+                         BackgroundColor="Red"
+                         CornerRadius="6"
+                         VerticalOptions="Start"
+                         HorizontalOptions="Start"
+                         />
+                <Label Text="Para ti"
+                       TextColor="White"
+                       VerticalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="23"/>
+
+            </StackLayout>
+            <Image Source="lupa.png" VerticalOptions="Center"></Image>
+        </StackLayout>
+        <!--#endregion-->
+        <StackLayout Grid.Row="1"
+                     Orientation="Horizontal"
+                     Spacing="25"
+                     Padding="10,0">
+            <StackLayout>
+                <Image Source="home.png" Style="{StaticResource imagefooter}"/>
+                <Label Text="Inicio"
+                       Style="{StaticResource lbFooter}"/>
+
+
+            </StackLayout>
+            <StackLayout>
+                <Image Source="crown.png" Style="{StaticResource imagefooter}"/>
+                <Label Text="Tendencias"
+                       Style="{StaticResource lbFooter}"/>
+
+
+            </StackLayout>
+            <Grid HorizontalOptions="CenterAndExpand">
+                <BoxView BackgroundColor="#ff02a0"
+                          HeightRequest="48"
+                        WidthRequest="60"
+                        VerticalOptions="Start"
+                          CornerRadius="10"
+                         TranslationX="10"
+                         />
+                <BoxView BackgroundColor="#00dfef"
+                          HeightRequest="48"
+                        WidthRequest="60"
+                        VerticalOptions="Start"
+                          CornerRadius="10"
+                         TranslationX="-10"
+                         />
+                <Button 
+                        HeightRequest="48"
+                        WidthRequest="60"
+                        VerticalOptions="Start"
+                        BackgroundColor="White"
+                        CornerRadius="11"
+                        />
+                <Label Text="+" FontSize="35"
+                       HorizontalOptions="Center"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Start"
+                       />
+
+            </Grid>
+            <StackLayout>
+                <Image Source="charlar.png" Style="{StaticResource imagefooter}"/>
+                <Label Text="Bandeja de entrada"
+                       Style="{StaticResource lbFooter}"/>
+
+
+            </StackLayout>
+            <StackLayout>
+                <Image Source="user.png" Style="{StaticResource imagefooter}"/>
+                <Label Text="Perfil"
+                       Style="{StaticResource lbFooter}"/>
+
+
+            </StackLayout>
+
+
+        </StackLayout>
+        
+    </Grid>
+</ContentPage>

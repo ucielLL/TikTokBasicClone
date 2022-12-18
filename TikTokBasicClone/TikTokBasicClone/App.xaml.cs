@@ -1,4 +1,5 @@
 ﻿using System;
+using TikTokBasicClone.View.Player;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace TikTokBasicClone
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new PlayerView();
         }
 
         protected override void OnStart()

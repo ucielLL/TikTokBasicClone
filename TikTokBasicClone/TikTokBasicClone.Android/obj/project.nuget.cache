@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wV8A1zCELflZjeDszVYUHNK5Xi+6W5uaUugYb67/lDLilsbf4tuPJLhA1Ar+HQLHa8Z4qRQJEgz9Um4UmJmQVA==",
+  "dgSpecHash": "WWNjX9hbr8ocknUQSjkKlnBcSGGey3wbqIR5HhsH+vIAzVQ+Jua56zZGQoOKTGiYigRftmFVEn4+9i0+5wen1A==",
   "success": true,
   "projectFilePath": "D:\\cursos\\xamarin\\tiktok\\TikTokBasicClone\\TikTokBasicClone\\TikTokBasicClone.Android\\TikTokBasicClone.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\octane.xam.videoplayer\\3.1.0\\octane.xam.videoplayer.3.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
